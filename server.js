@@ -8,10 +8,14 @@ import cors from 'cors';
 import createCatController from './routes/catagoryRout.js'
 import productRoutes from './routes/productRoutes.js'
 import path from 'path'
+import {fileUrlToPath} from 'url'
+
 //database config
 dotenv.config();
 connectDB();
 
+const __filename = fileUrlToPath(import.meta.url);
+const __dirname=path.dirname(__filename);
 //rest object
 const app = express();
 

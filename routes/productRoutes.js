@@ -6,13 +6,10 @@ import {
   deleteProductController,
   getProductController,
   getSingleProductController,
-  // productCategoryController,
   productCountController,
   productFiltersController,
   productListController,
   productPhotoController,
-  // realtedProductController,
-  // searchProductController,
   updateProductController,
 } from "../controllers/productController.js";
 import { isAdmin, requiredSignIn } from "../middlewares/authMiddleware.js";

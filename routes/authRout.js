@@ -8,7 +8,7 @@ import {
 } from "../controllers/authController.js";
 import { isAdmin, requiredSignIn } from "../middlewares/authMiddleware.js";
 const router = express.Router();
-
+//defining routes
 router.post("/register", registerController);
 router.post("/login", loginController);
 router.get("/test", requiredSignIn, isAdmin, testController);
